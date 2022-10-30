@@ -22,6 +22,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    background-color:  hsla(0, 0%, 98%, 0.568);
 }
 
 .container{
@@ -39,6 +40,10 @@ main{
         h1{
             font-weight: 200;
             color: hsl(229, 6%, 66%);
+            font-size: 1.5rem;
+        }
+        h2{
+            font-size: 1.5rem;
         }
         p{
             padding: 1em;
@@ -60,24 +65,38 @@ main{
                 justify-content: space-around;
                 gap: 2em;
             }
+
             .card-tree{
                 @include card(hsl(0, 78%, 62%));
+                h2{
+                    font-weight: 400;
+                }
             }
             .card-four{
                 @include card(hsl(34, 97%, 64%));
+                h2{
+                    font-weight: 400;
+                }
             }
             .card-one{
                 @include card(hsl(180, 62%, 55%));
+                h2{
+                    font-weight: 400;
+                }
             }
             .card-two{
                 @include card(hsl(212, 86%, 64%));
+                h2{
+                    font-weight: 400;
+                }
             }
         }
+
         .paragraph__card{
             line-height: 1.6;
-            padding: 1rem .5rem;
+            padding: 2rem .5rem;
+            padding-left: 0;
             color: hsl(229, 6%, 66%);
-
         }
 
         img{
