@@ -1,0 +1,108 @@
+@mixin card($color-border:#000) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 375px;
+    border-top: 0.2rem solid $color-border;
+    padding: 1.5rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    box-shadow: 0px 20px 20px rgba($color: hsl(229, 6%, 66%), $alpha: .3);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 3rem;
+    .flex__one{
+        text-align: center;
+        h1{
+            font-weight: 200;
+            color: hsl(229, 6%, 66%);
+        }
+        p{
+            padding: 1em;
+            color: hsl(229, 6%, 66%);
+        }
+    }
+    .flex__two{
+        margin-bottom: 2rem;
+        .row{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(300px, 100%));
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+
+            .flex__card{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                gap: 2em;
+            }
+            .card-tree{
+                @include card(hsl(0, 78%, 62%));
+            }
+            .card-four{
+                @include card(hsl(34, 97%, 64%));
+            }
+            .card-one{
+                @include card(hsl(180, 62%, 55%));
+            }
+            .card-two{
+                @include card(hsl(212, 86%, 64%));
+            }
+        }
+        .paragraph__card{
+            line-height: 1.6;
+            padding: 1rem .5rem;
+            color: hsl(229, 6%, 66%);
+
+        }
+
+        img{
+            display: block;
+            margin-left: auto;
+            transform: scale(.9);
+        }
+
+    }
+}
+
+@media (min-width: 768px) {
+    main{
+        .flex__one{
+            .paragraph-main{
+                width: 43%;
+                margin: 0 auto;
+            }
+        }
+
+        .flex__two{
+
+            .row{
+                grid-template-columns: repeat(3, minmax(300px, 90%));
+            }
+        }
+    }
+}

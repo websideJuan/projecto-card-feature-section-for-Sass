@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 3rem;
+}
+main .flex__one {
+  text-align: center;
+}
+main .flex__one h1 {
+  font-weight: 200;
+  color: hsl(229deg, 6%, 66%);
+}
+main .flex__one p {
+  padding: 1em;
+  color: hsl(229deg, 6%, 66%);
+}
+main .flex__two {
+  margin-bottom: 2rem;
+}
+main .flex__two .row {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 100%));
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+main .flex__two .row .flex__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+}
+main .flex__two .row .card-tree {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 375px;
+  border-top: 0.2rem solid hsl(0deg, 78%, 62%);
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  box-shadow: 0px 20px 20px rgba(163, 165, 174, 0.3);
+}
+main .flex__two .row .card-four {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 375px;
+  border-top: 0.2rem solid hsl(34deg, 97%, 64%);
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  box-shadow: 0px 20px 20px rgba(163, 165, 174, 0.3);
+}
+main .flex__two .row .card-one {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 375px;
+  border-top: 0.2rem solid hsl(180deg, 62%, 55%);
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  box-shadow: 0px 20px 20px rgba(163, 165, 174, 0.3);
+}
+main .flex__two .row .card-two {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 375px;
+  border-top: 0.2rem solid hsl(212deg, 86%, 64%);
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  box-shadow: 0px 20px 20px rgba(163, 165, 174, 0.3);
+}
+main .flex__two .paragraph__card {
+  line-height: 1.6;
+  padding: 1rem 0.5rem;
+  color: hsl(229deg, 6%, 66%);
+}
+main .flex__two img {
+  display: block;
+  margin-left: auto;
+  transform: scale(0.9);
+}
+
+@media (min-width: 768px) {
+  main .flex__one .paragraph-main {
+    width: 43%;
+    margin: 0 auto;
+  }
+  main .flex__two .row {
+    grid-template-columns: repeat(3, minmax(300px, 90%));
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
